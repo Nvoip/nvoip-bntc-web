@@ -1,0 +1,22 @@
+{
+  "name": "@nvoip/bntc-web",
+  "version": "1.0.0",
+  "description": "Best Number to Call para sites HTML, landing pages e aplicações web sem WordPress.",
+  "main": "dist/nvoip-bntc-web.js",
+  "files": [
+    "dist",
+    "config",
+    "examples",
+    "assets",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "nvoip",
+    "bntc",
+    "best-number-to-call",
+    "telefone",
+    "geolocalizacao"
+  ],
+  "license": "MIT"
+}

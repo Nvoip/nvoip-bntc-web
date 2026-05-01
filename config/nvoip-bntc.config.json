@@ -1,0 +1,43 @@
+{
+  "defaultNumber": "551141186267",
+  "format": "national",
+  "cacheHours": 24,
+  "maxDistanceKm": 450,
+  "ipFallback": true,
+  "numbers": [
+    {
+      "phone": "551141186267",
+      "label": "São Paulo",
+      "city": "São Paulo",
+      "state": "SP",
+      "country": "BR",
+      "areaCode": "11",
+      "lat": -23.5505,
+      "lng": -46.6333,
+      "group": "default",
+      "priority": 10
+    },
+    {
+      "phone": "553231120662",
+      "label": "Juiz de Fora",
+      "city": "Juiz de Fora",
+      "state": "MG",
+      "country": "BR",
+      "areaCode": "32",
+      "lat": -21.7642,
+      "lng": -43.3496,
+      "group": "default",
+      "priority": 8
+    }
+  ],
+  "specialNumbers": [
+    {
+      "phone": "558008783122",
+      "label": "0800 nacional",
+      "country": "BR",
+      "group": "default",
+      "mode": "fallback",
+      "allowedPaths": []
+    }
+  ]
+}

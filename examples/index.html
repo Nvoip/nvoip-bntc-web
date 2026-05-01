@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nvoip BNTC Web</title>
+  <style>
+    body{font-family:Arial,sans-serif;margin:0;background:#fff7f2;color:#2a101d}
+    main{max-width:760px;margin:0 auto;padding:48px 20px}
+    .card{background:#fff;border:1px solid #f0dfd8;border-radius:8px;padding:28px;box-shadow:0 12px 28px rgba(99,41,66,.08)}
+    h1{color:#632942;margin-top:0}
+    a.button{display:inline-flex;align-items:center;background:#f37435;color:#fff;text-decoration:none;font-weight:700;border-radius:6px;padding:13px 18px}
+    code{background:#fff0e8;border:1px solid #ffd8c2;border-radius:4px;padding:2px 5px}
+  </style>
+</head>
+<body>
+  <main>
+    <div class="card">
+      <h1>Nvoip BNTC Web</h1>
+      <p>Este exemplo troca o token <code>{nvoip_bntc}</code> pelo melhor número para o visitante.</p>
+      <p>
+        <a class="button" href="tel:{nvoip_bntc}">
+          Ligar para <span data-nvoip-bntc>{nvoip_bntc}</span>
+        </a>
+      </p>
+      <p>Snippet de vendas: <span data-nvoip-bntc data-bntc-group="vendas">{nvoip_bntc:vendas}</span></p>
+    </div>
+  </main>
+
+  <script>
+    window.NvoipBNTC = {
+      defaultNumber: "551141186267",
+      format: "national",
+      cacheHours: 24,
+      ipFallback: true,
+      numbers: [
+        { phone: "551141186267", label: "São Paulo", city: "São Paulo", state: "SP", country: "BR", areaCode: "11", lat: -23.5505, lng: -46.6333, group: "default", priority: 10 },
+        { phone: "553231120662", label: "Juiz de Fora", city: "Juiz de Fora", state: "MG", country: "BR", areaCode: "32", lat: -21.7642, lng: -43.3496, group: "default", priority: 8 },
+        { phone: "552120181009", label: "Rio de Janeiro", city: "Rio de Janeiro", state: "RJ", country: "BR", areaCode: "21", lat: -22.9068, lng: -43.1729, group: "vendas", priority: 10 }
+      ],
+      specialNumbers: [
+        { phone: "558008783122", label: "0800 nacional", country: "BR", group: "default", mode: "fallback", allowedPaths: [] }
+      ]
+    };
+  </script>
+  <script src="../dist/nvoip-bntc-web.js" defer></script>
+</body>
+</html>
